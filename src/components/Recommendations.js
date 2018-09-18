@@ -14,7 +14,6 @@ export default class Recommendations extends React.Component {
         
             // console.log(data);
             let recommendations = data.hits;
-            console.log(recommendations);
             if (recommendations) {
                 this.setState(() => ({ recommendations }));
             }
@@ -26,7 +25,7 @@ export default class Recommendations extends React.Component {
                 <div className="col-lg-12 recommendation-title">If you like this, you might be into these
                 <hr></hr>
                 </div>
-                <div className="col-lg-12"> 
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
                 {this.state.recommendations.map((recommendation) => {
                     let link;
                     let alt;
