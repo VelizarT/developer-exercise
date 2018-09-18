@@ -22,20 +22,33 @@ export default class Recommendations extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="row">
+                <div className="col-lg-12 recommendation-title">If you like this, you might be into these
+                <hr></hr>
+                </div>
+                <div className="col-lg-12"> 
                 {this.state.recommendations.map((recommendation) => {
-                    if(recommendation.image) {
-                        return <Recommendation 
-                            key={recommendation.product_id}
-                            currency={recommendation.currency}
-                            link={recommendation.link}
-                            price={recommendation.price}
-                            productName={recommendation.product_name}
-                            imgAlt={recommendation.image.alt}
-                            imgLink={recommendation.image.link}
-                        />
+                    let link;
+                    let alt;
+                    if (recommendation.image) {
+                        link = recommendation.image.link;
+                        alt = recommendation.image.alt;
+                    } else {
+                        link = 'http://onenten.org/wp-content/uploads/2011/09/no-photo-available.jpg';
+                        alt = 'No photo available';
                     }
+                    return <Recommendation 
+                        key={recommendation.product_id}
+                        currency={recommendation.currency}
+                        link={recommendation.link}
+                        price={recommendation.price}
+                        productName={recommendation.product_name}
+                        imgAlt={alt}
+                        imgLink={link}
+                    />
+                    
                 })}
+                </div>
             </div>
         );
     }

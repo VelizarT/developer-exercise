@@ -1,9 +1,28 @@
-div a {
-    text-decoration: none;
-    background-color: aquamarine;
+body {
+    background: pink;
+}   
+
+hr {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.recommendation-title {
+    text-align: center;
+    margin-top: 15px;
 }
 
 .recommendation-wrapper {
-    margin: 25px;
+    margin: 10px;
     display: inline-block;
+}
+
+.card {
+    min-height: 325px;
+}
+
+.card-title {
+    font-size: 14px;
 }
