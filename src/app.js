@@ -1,12 +1,8 @@
 console.log('App is running');
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Recommendations from './components/Recommendations';
 
-const template = (
-    <div>
-        <p>Template</p>
-    </div>
-);
-
-ReactDOM.render(template, document.getElementById('app'));
+ReactDOM.render(<Recommendations />, document.getElementById('app'));

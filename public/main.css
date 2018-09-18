@@ -1,0 +1,9 @@
+div a {
+    text-decoration: none;
+    background-color: aquamarine;
+}
+
+.recommendation-wrapper {
+    margin: 25px;
+    display: inline-block;
+}
