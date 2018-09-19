@@ -3,8 +3,8 @@ import React from 'react';
 export default class Recommendation extends React.Component {
     render() {
         return (
-            <div className="recommendation-wrapper">
-                <div className="card" style={{"width": "200px"}}>
+            <div className="recommendation-wrapper col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="card">
                     <a href={this.props.link}>
                         <img 
                             src={this.props.imgLink} 

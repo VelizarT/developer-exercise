@@ -1,7 +1,3 @@
-body {
-    background: pink;
-}   
-
 hr {
     margin: 0;
     padding: 0;
@@ -15,14 +11,21 @@ hr {
 }
 
 .recommendation-wrapper {
-    margin: 10px;
     display: inline-block;
 }
 
 .card {
-    min-height: 325px;
+    height: 375px;
+    margin-bottom: 10px;
 }
 
 .card-title {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 12px;
+    text-align: center;
 }
