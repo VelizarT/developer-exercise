@@ -1,11 +1,3 @@
 # Warehouse Web Developer Exercise
 
-In this excercise we would like you to build a web component similar to this [screenshot](recommendation_screenshot.png) using the [JSON](data/recommendations.json) provided. Creativity is accepted but do not alter the JSON. The component you build should display images, prices and link to the product taking into consideration how it would work with i18n.
-
-### Requirements
-* Responsive
-* Reusable code
-
-Please fork this repository and commit your changes for review.
-
-Amend this Readme in your forked repo and use your commits to outline the component you have created and the decisions that you have made.
+The task of creating a Recommendations component is implemented using React as the main user interface library , Bootstrap 4 for the grid system, Webpack for bundling assets, the webpack-dev-server for the server and Babel as a compiler. The code is Responsive due to the grid system but it is not mobile firendly at this stage. This could easily be achieved with custom mobile styles. The code is reusible due to the component structure of the code. Use "yarn run dev-server" command to start the webpack-dev-server.
