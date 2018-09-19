@@ -2,7 +2,6 @@ import React from 'react';
 import Recommendation from './Recommendation';
 const data = require('../../data/recommendations.json');
 
-
 export default class Recommendations extends React.Component {
     constructor(props) {
         super(props);
@@ -11,8 +10,6 @@ export default class Recommendations extends React.Component {
         }
     }
     componentDidMount() {
-        
-            // console.log(data);
             let recommendations = data.hits;
             if (recommendations) {
                 this.setState(() => ({ recommendations }));
@@ -46,7 +43,6 @@ export default class Recommendations extends React.Component {
                                 imgAlt={alt}
                                 imgLink={link}
                             />
-                        
                         })}
                     </div>
                 </div>
